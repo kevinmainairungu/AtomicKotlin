@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse.iml" filepath="$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse.iml" group="AtomicKotlinCourse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse_main.iml" group="AtomicKotlinCourse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AtomicKotlinCourse_test.iml" group="AtomicKotlinCourse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="AtomicKotlinCourse/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="AtomicKotlinCourse/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="AtomicKotlinCourse/util" />
+    </modules>
+  </component>
+</project>

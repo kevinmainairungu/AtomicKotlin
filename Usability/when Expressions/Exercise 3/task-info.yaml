@@ -1,0 +1,111 @@
+type: edu
+custom_name: Exercise 3
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 99
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 99
+    initialized_from_dependency: false
+    possible_answer: |-
+      var leftUnmatched = 0
+        for (c in input) {
+          when (c) {
+            '(' -> leftUnmatched++
+            ')' -> leftUnmatched--
+            ' ' -> {
+            }
+            else -> throw IllegalArgumentException("The string must consist " +
+              "only of parentheses and whitespaces")
+          }
+          if (leftUnmatched < 0) return false
+        }
+        return leftUnmatched == 0
+    selected: false
+    status: Unchecked
+  text: |-
+    package whenExpressionsExercise3
+
+    import atomictest.eq
+
+    fun isBalanced(input: String): Boolean {
+      TODO()
+    }
+
+    fun main() {
+      isBalanced("(()) ()") eq true
+      isBalanced(")(") eq false
+    }
+  learner_created: false
+- name: test/Tests.kt
+  visible: false
+  text: |-
+    package whenExpressionsExercise3
+
+    import org.junit.Assert
+    import org.junit.FixMethodOrder
+    import org.junit.Test
+    import org.junit.runners.MethodSorters
+    import util.TIMEOUT
+
+    @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+    class TestWhenExpressionsExercise3 {
+      private fun checkBalanced(s: String, expected: Boolean) {
+        Assert.assertEquals("isBalanced($s) should return $expected", isBalanced(s), expected)
+      }
+
+      @Test(timeout = TIMEOUT)
+      fun test01Balanced() = checkBalanced("()", true)
+
+      @Test(timeout = TIMEOUT)
+      fun test02Balanced() = checkBalanced("(()) ()", true)
+
+      @Test(timeout = TIMEOUT)
+      fun test03Balanced() = checkBalanced("(()) ((()))", true)
+
+      @Test(timeout = TIMEOUT)
+      fun test04Balanced() = checkBalanced("()", true)
+
+      @Test(timeout = TIMEOUT)
+      fun test05Unbalanced() = checkBalanced("((", false)
+
+      @Test(timeout = TIMEOUT)
+      fun test06Unbalanced() = checkBalanced("))", false)
+
+      @Test(timeout = TIMEOUT)
+      fun test07Unbalanced() = checkBalanced(")(", false)
+
+      @Test(timeout = TIMEOUT)
+      fun test08Unbalanced() = checkBalanced("(()(())))()", false)
+
+      @Test(timeout = TIMEOUT)
+      fun test09Balanced() = checkBalanced("(() () ()) ((()) () (()) () (()))", true)
+
+      private fun checkWrongInput(s: String) {
+        try {
+          isBalanced(s)
+          throw AssertionError("""IllegalArgumentException should be thrown for 'isBalanced("$s")'""")
+        } catch (e: IllegalArgumentException) {
+          // ok
+        }
+      }
+
+
+      @Test(timeout = TIMEOUT)
+      fun test10WrongCharacters() = checkWrongInput("1()")
+
+      @Test(timeout = TIMEOUT)
+      fun test11WrongCharacters() = checkWrongInput("\\//")
+
+      @Test(timeout = TIMEOUT)
+      fun test12WrongCharacters() = checkWrongInput("[][]")
+    }
+  learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+when+Expressions+%2F+Exercise3
+status: Unchecked
+record: -1
