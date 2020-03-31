@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 44
-    length: 7
+    length: 38
     placeholder_text: // TODO
     initial_state:
       length: 7
@@ -14,8 +14,8 @@ files:
     possible_answer: |-
       println("Hello,")
         println("Kotlin!")
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |-
     package helloWorldExercise2
 
@@ -31,5 +31,5 @@ files:
   learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Hello%2C+World%21+%2F+Exercise2
-status: Unchecked
+status: Solved
 record: -1
