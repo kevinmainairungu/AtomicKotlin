@@ -11,7 +11,7 @@ files:
   visible: true
   placeholders:
   - offset: 43
-    length: 7
+    length: 67
     placeholder_text: // TODO
     initial_state:
       length: 7
@@ -23,7 +23,7 @@ files:
         a = 42
         println(a)
         println(b)
-    selected: false
+    selected: true
     status: Unchecked
   text: |-
     package varAndValExercise2
