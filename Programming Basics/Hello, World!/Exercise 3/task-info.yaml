@@ -4,7 +4,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 44
+  - offset: 46
     length: 38
     placeholder_text: |-
       println("Hello,")
@@ -16,8 +16,8 @@ files:
     possible_answer: |-
       //println("Hello,")
         println("Kotlin!")
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |-
     package helloWorldExercise3
 
@@ -31,5 +31,5 @@ files:
   text: |
     Kotlin!
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1

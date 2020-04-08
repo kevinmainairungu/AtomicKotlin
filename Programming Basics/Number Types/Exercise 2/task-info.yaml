@@ -11,7 +11,7 @@ files:
       length: 1
       offset: 106
     initialized_from_dependency: false
-    possible_answer: 1_000_000_000
+    possible_answer: 1000000000
     selected: false
     status: Unchecked
   - offset: 134
@@ -31,7 +31,7 @@ files:
       length: 1
       offset: 157
     initialized_from_dependency: false
-    possible_answer: 1_000_000_000_000
+    possible_answer: 1000000000000
     selected: false
     status: Unchecked
   - offset: 186
@@ -51,7 +51,7 @@ files:
       length: 1
       offset: 212
     initialized_from_dependency: false
-    possible_answer: 1_000_000_000_000_000_000
+    possible_answer: 1000000000000000000
     selected: false
     status: Unchecked
   - offset: 244
