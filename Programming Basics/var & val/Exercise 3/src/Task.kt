@@ -1,8 +1,11 @@
 package varAndValExercise3
 
 fun main() {
-  var x = 1
-  var y = 2
+  var x = 2
+  var y = 1
+
+  val c = x.and(y)
+
   // TODO
   println(x)
   println(y)

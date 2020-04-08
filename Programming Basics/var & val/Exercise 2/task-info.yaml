@@ -24,7 +24,7 @@ files:
         println(a)
         println(b)
     selected: true
-    status: Unchecked
+    status: Solved
   text: |-
     package varAndValExercise2
 
@@ -32,5 +32,5 @@ files:
       // TODO
     }
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
