@@ -1,5 +1,9 @@
 package varAndValExercise1
 
 fun main() {
-  // TODO
+  var answer = 42
+
+    answer = 43
+
+    println(answer)
 }

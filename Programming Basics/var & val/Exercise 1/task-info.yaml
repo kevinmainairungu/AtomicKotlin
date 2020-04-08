@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 43
-    length: 7
+    length: 53
     placeholder_text: // TODO
     initial_state:
       length: 7
@@ -15,8 +15,8 @@ files:
       var answer = 42
         answer = 43
         println(answer)
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
   text: |-
     package varAndValExercise1
 
@@ -31,5 +31,5 @@ files:
   learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+var+%26+val+%2F+Exercise1
-status: Unchecked
+status: Solved
 record: -1
